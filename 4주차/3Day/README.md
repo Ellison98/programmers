@@ -3,9 +3,16 @@
 일반적인 웹 브라우저에서 GET 요청은 쉽게 테스트할 수 있지만, POST 요청은 브라우저 상에서 쉽게 테스트할 수 없습니다. 이 문제를 해결하기 위해 우리는 Postman이라는 툴을 사용합니다. Postman은 API 요청을 손쉽게 테스트하고 디버깅할 수 있는 유용한 도구입니다.
 
 # GET
+
+GET 요청 테스트: Postman을 실행하고, 서버에 GET 요청을 보내보세요. 만약 정상적으로 동작한다면, 서버로부터 데이터를 성공적으로 받아올 것입니다.
+
 <img src="images/1.png" alt="alt text" width="400" height="300"/>
 
 # POST
+
+POST 요청 테스트: POST 요청을 테스트하기 위해서는, Postman에서 요청의 메서드를 POST로 설정하고, Body에 필요한 데이터를 입력해야 합니다. 이를 통해 서버에 데이터를 전송하고 원하는 응답을 받을 수 있습니다.
+
+<img src="images/2.png" alt="alt text" width="400" height="300"/>
 
 # 유튜버 등록 실습
 
@@ -62,3 +69,7 @@ app.post("/youtubers", (req, res) => {
     });
 });
 ~~~
+
+<img src="images/3.png" alt="alt text" width="400" height="300"/>
+<img src="images/4.png" alt="alt text" width="400" height="300"/>
+<img src="images/5.png" alt="alt text" width="400" height="300"/>

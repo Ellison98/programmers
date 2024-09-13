@@ -55,8 +55,8 @@ try {
 
 ## Time Zone 설정
 
-<img src="images/1.png" alt="alt text" width="400" height="300"/>
-<img src="images/2.png" alt="alt text" width="400" height="300"/>
+<img src="images/1.png" alt="alt text" width="700" height="100"/>
+<img src="images/2.png" alt="alt text" width="700" height="100"/>
 MySQL 데이터베이스의 기본 system timezone은 UTC입니다. 즉, 타임스탬프가 저장될 때 UTC 시간을 기준으로 저장됩니다. 하지만 서버(Node.js)가 실행되는 환경에 따라 시간 차이가 발생할 수 있습니다.
 
 현재 서버는 한국(Asia/Seoul)에 위치해 있으므로 UTC+9 타임존이 적용됩니다. 이를 데이터베이스와 동기화하기 위해 시간대를 변경하려면 아래와 같은 절차를 따릅니다.
@@ -69,8 +69,8 @@ MySQL의 global time_zone을 변경하여 모든 데이터베이스에 적용합
 SET GLOBAL time_zone = 'Asia/Seoul';
 ```
 
-<img src="images/3.png" alt="alt text" width="400" height="300"/>
-<img src="images/4.png" alt="alt text" width="400" height="300"/>
+<img src="images/3.png" alt="alt text" width="700" height="100"/>
+<img src="images/4.png" alt="alt text" width="700" height="100"/>
 
 이 명령어를 실행한 후에도 여전히 session.time_zone은 SYSTEM으로 설정되어 있을 수 있습니다. 이는 현재 접속 중인 세션에만 해당되는 문제입니다.
 
@@ -82,9 +82,9 @@ SET GLOBAL time_zone = 'Asia/Seoul';
 SET time_zone = 'Asia/Seoul';
 ```
 
-<img src="images/6.png" alt="alt text" width="400" height="300"/>
-<img src="images/7.png" alt="alt text" width="400" height="300"/>
-<img src="images/8.png" alt="alt text" width="400" height="300"/>
+<img src="images/6.png" alt="alt text" width="700" height="100"/>
+<img src="images/7.png" alt="alt text" width="700" height="100"/>
+<img src="images/8.png" alt="alt text" width="700" height="100"/>
 
 이렇게 하면 현재 세션에서 저장된 시간 역시 Asia/Seoul 기준으로 변경됩니다. 하지만 Node.js에서 조회할 때 여전히 global.time_zone 변수가 적용되어 시간 차이가 발생할 수 있습니다.
 

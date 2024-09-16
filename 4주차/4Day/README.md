@@ -63,7 +63,7 @@ app.delete("/youtubers/:id", (req, res) => {
 app.delete("/youtubers", (req, res) => {
     if (youtubers.size) {
         youtubers.clear();
-        res.send(`계⭐정⭐폭⭐파`);
+        res.send(`계정폭파`);
     } else {
         res.status(404).send("삭제할 계정이 없습니다.");
     }
@@ -109,3 +109,5 @@ API에서 사용할 HTTP 상태 코드의 범주를 정리해 보았습니다.
     - 에러(문제점)가 발견되었을 때
     - 기능을 추가하기 전
     - 코드를 읽기 힘들 때
+
+

@@ -140,3 +140,5 @@ app.delete("/users/:id", (req, res) => {
     }
 });
 ```
+
+![image](https://github.com/user-attachments/assets/6bf0db96-7a8f-464f-96ac-75d6c05f90b8)

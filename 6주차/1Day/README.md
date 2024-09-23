@@ -17,6 +17,7 @@ const pool = mysql.createPool({
 module.exports = pool;
 ```
 
+<img src="images/db_conn_test.png" alt="alt text" width="700" height="400"/>
 
 ## 장점
     •	코드 재사용성: 여러 파일에서 DB 연결을 재사용 가능.
